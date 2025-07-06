@@ -21,13 +21,15 @@ form > h1 {
 }
 .calc-error {
   color: red;
-  font-weight: 800;
+  font-weight: 900;
   text-align: center;
 }
 .calc-result {
   color: green;
-  font-weight: 800;
+  font-weight: 900;
   text-align: center;
+  padding: 12px 0;
+  background-color: grey;
 }
 input,
 select {
