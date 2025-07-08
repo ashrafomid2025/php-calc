@@ -24,6 +24,7 @@
     <button name ="submit">Calculate</button>
   </form>
   <?php
+//   getting data and store them in variables
    if($_SERVER["REQUEST_METHOD"]=="POST"){
     $num1 = filter_input(INPUT_POST, "number01",FILTER_SANITIZE_NUMBER_FLOAT);
     $num2 = filter_input(INPUT_POST, "number02",FILTER_SANITIZE_NUMBER_FLOAT);
