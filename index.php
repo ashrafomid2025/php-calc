@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calculator </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method = "post">
     <h1>Calculator</h1>
-    <label for="number01">Number One</label>
+    <label for="number01">First Number</label>
     <input type="number" name= "number01">
     <label for="operator">Operator</label>
     <select name="operator">
@@ -19,7 +19,7 @@
         <option value="multiply">*</option>
         <option value="divide">/</option>
     </select>
-    <label for="number Two">Number Two</label>
+    <label for="number Two">Second Number</label>
     <input type="number" name = "number02">
     <button name ="submit">Calculate</button>
   </form>
