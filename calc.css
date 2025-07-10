@@ -1,0 +1,40 @@
+body {
+  box-sizing: border-box;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  padding: 8px;
+  width: 50%;
+  margin: 12px auto;
+  display: flex;
+  background-color: rgb(202, 250, 202);
+  flex-direction: column;
+  border-radius: 12px;
+}
+form input,
+select {
+  height: 30px;
+  border-radius: 8px;
+  outline: 0;
+  margin: 12px 0;
+}
+form > button {
+  padding: 12px 23px;
+  background-color: blueviolet;
+  color: white;
+  border: 0;
+  width: fit-content;
+  margin: 0 auto;
+}
+form input:focus {
+  outline: 0;
+}
+form label {
+  font-family: monospace;
+  font-size: 23px;
+  margin: 4px 0;
+}
