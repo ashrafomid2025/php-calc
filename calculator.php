@@ -8,7 +8,7 @@
 </head>
 <body>
     <form method = "post" action=<?php echo $_SERVER["PHP_SELF"] ?> >
-        <label for="">First Number</label>
+        <label for="">First Num</label>
         <input name ="num1" type="number" placeholder = "Enter the first number">
         <select name="operator" id="">
             <option value="plus">+</option>
@@ -17,7 +17,7 @@
             <option value="divide">/</option>
             <option value="module">%</option>
         </select>
-        <label for="">Second Number</label>
+        <label for="">Second Num</label>
         <input name = "num2" type="number" placeholder = "Enter the second Number">
         <button>Calculate</button>
     </form>
