@@ -16,15 +16,65 @@
         <button>Submit</button>
     </form>
     <?php
-     if($_SERVER["REQUEST_METHOD"]==="POST"){
-        $name = $_POST["name"];
-        $count = $_POST["loop"];
-        $number = 0;
-        while($number< $count){
-            echo "<h1> You are ". $name ."</h1>";
-            $number++;
+    //   object js => store related data about something
+    // php object => class 
+    class Person{
+        public $name;
+        public $age;
+        public $gender;
+        public $dob;
+        public function __construct($name, $age, $gender, $dob){
+            $this->name = $name;
+            $this->age = $age;
+            $this->gender = $gender;
+            $this->dob = $dob;
         }
-     }
+    }
+
+
+
+
+    $hatifInfo = new Person("Hatif", 20, "Male", "23/3/1998");
+
+
+    foreach($hatifInfo as $key => $value){
+        echo "<h1>". $key. ":" . $value ."</h1>";
+    }
+    
+
+    class Car{
+        public $color;
+       public  $model;
+        public function __construct($color, $model){
+            $this->color = $color;
+            $this-> model = $model;
+        }
+    }
+    
+    $myCar = new Car("Grey",2005);
+
+    foreach($myCar as $key => $value){
+        echo "<h2>". $key ." :" . $value. "</h2>";
+    }
+
+      
+      
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
     ?>
 </body>
 </html>
